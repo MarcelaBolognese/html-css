@@ -23,6 +23,11 @@ src: url('fontfamily/Deutsch.ttf') format('truetype');
 font-family: 'MorrisRomanBlack';
 src: url('fontfamily/MorrisRomanBlack.otf') format('truetype');
 }
+
+@font-face {
+   font-family: 'GeosansLight';
+   src: url('fontfamily/GeosansLight.ttf') format('truetype');
+   }
   
  
 header{
@@ -37,22 +42,26 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.397);
 
 header> h1 {
    font-family:'MorrisRomanBlack';
-   font-size: 4em;
+   font-size: 10vw;
    color: rgb(255, 255, 255);
-   padding-top: 30px;
-   
 
 }
 
 header> p {
    padding-bottom: 30px;
    color: rgb(255, 255, 255);
+   text-align: center;
+   
 }
 
 p {
+   font-family: 'GeosansLight';
    margin: 10px;
    padding: 10px;
-   font-size: 20px;
+   font-size: 2vw;
+   font-weight: bolder;
+   text-align: left;
+   
    
 }
 
@@ -71,18 +80,51 @@ header a, footer a {
    padding-bottom: 10vh;
    line-height: 2em;
    padding-left: 30px;
+   font-size: 2.8vw;
+   text-align: left;
+   
+  }
+
+  section > p {
+   padding-bottom: 2em;
   }
 
   section.imagem {
    background-color: #5e6379;
    color: white;
+   background-size: cover;
+   background-attachment:fixed ;
+   
   }
 
   section.imagem > p {
-   background-color: rgba(0, 0, 0, 0.459);
-   width: 400px;
+   display: inline-block;
+   background-color: rgba(0, 0, 0, 0.658);
+   padding: 20px;
+   text-shadow: 1px 1px 0px black;
+   
   }
 
+  section#img01 {
+    background-image: url('../estilo/imagens/janela1.png') ;    
+  }
+
+  section#img02 {
+   background-image: url('../estilo/imagens/edgarallanpoe2.png'); 
+  }
+  
+  section#img03{
+   background-image: url('../estilo/imagens/corvo2.png');
+  }
+
+h2 {
+   font-family: 'GeosansLight';
+   text-align: center;
+}
+
+h2> p{
+   font-family: 'GeosansLight';
+}
 footer {
    background-color: #3f3f3f;
    text-align: center;
@@ -91,4 +133,5 @@ footer {
 
 footer> p {
    color: white;
+   text-align: center;
 }
