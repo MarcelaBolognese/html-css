@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Responsivas</title>
+    <title>Site de teste</title>
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(117, 117, 117);
+            color: rgb(0, 0, 0);
         }
 
         table {
             border-collapse: collapse;
+            
         }
 
         caption { 
@@ -26,18 +30,19 @@
         }
 
         tr:nth-child(even) {
-            background-color: rgb(189, 189, 189);
+            background-color: rgb(151, 149, 149);
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(255, 255, 255);
         }
 
         div#container {
             overflow-x: auto;
         }
-
-    </style>
+     </style>
 </head>
 <body>
-    <h1>Tabelas em telas pequenas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus esse natus, similique officiis eum saepe omnis aspernatur. Fugit molestiae nesciunt inventore error quos, facilis sit nostrum corrupti enim iure.</p>
     <div id="container">
         <table>
             <caption>Tabelas Responsivas</caption>
@@ -107,6 +112,5 @@
         </tbody>
         </table>
     </div>
-    
 </body>
 </html>
