@@ -13,10 +13,12 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action= "cadastro.php" autocomplete="off">  <!-- isso serve para deixar sem aparecer sujestões de nomes no formulário se quiser deixar com sujestão é só tirar o autocomplete= off -->
+    <form action= "cadastro.php" method="post" autocomplete="off">  <!-- isso serve para deixar sem aparecer sujestões de nomes no formulário se quiser deixar com sujestão é só tirar o autocomplete= off -->
 
-    <!--Label é importante para poder relacionar a informação que é colocada no campo do formulário. Por exemplo se está para colocar o nome, o label serve para registrar o campo nome com o nome que a pessoa colocar lá-->>
+    <!--Label é importante para poder relacionar a informação que é colocada no campo do formulário. Por exemplo se está para colocar o nome, o label serve para registrar o campo nome com o nome que a pessoa colocar lá
     
+    Em formulário existe dois métodos o GET e o POST. O get é o padrão, nele as informações ficam na url, use quando os dados não forem sensíveis. Se colocar o post ele tira essa informação da url, porém não quer dizer que agora está super seguro as informações-->
+
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"> </p>
         <p><label for="isobrenome">Sobrenome:</label> 
